@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { FormPartComponent } from './form-part/form-part.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TablePartComponent } from './table-part/table-part.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormPartComponent,
+    TablePartComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
